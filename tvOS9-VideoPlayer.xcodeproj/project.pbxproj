@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7EC5D5301BA4A2C300EFC496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5D52F1BA4A2C300EFC496 /* AppDelegate.swift */; };
-		7EC5D5321BA4A2C300EFC496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5D5311BA4A2C300EFC496 /* ViewController.swift */; };
 		7EC5D5351BA4A2C300EFC496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC5D5331BA4A2C300EFC496 /* Main.storyboard */; };
 		7EC5D5371BA4A2C300EFC496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EC5D5361BA4A2C300EFC496 /* Assets.xcassets */; };
+		7EC5D53F1BA4A32200EFC496 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5D53E1BA4A32100EFC496 /* MainViewController.swift */; };
+		7EC5D5411BA4A59100EFC496 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5D5401BA4A59100EFC496 /* VideoPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EC5D52C1BA4A2C300EFC496 /* tvOS9-VideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tvOS9-VideoPlayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC5D52F1BA4A2C300EFC496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EC5D5311BA4A2C300EFC496 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EC5D5341BA4A2C300EFC496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EC5D5361BA4A2C300EFC496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EC5D5381BA4A2C300EFC496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EC5D53E1BA4A32100EFC496 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7EC5D5401BA4A59100EFC496 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,46 @@
 		7EC5D52E1BA4A2C300EFC496 /* tvOS9-VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7EC5D5421BA4AF0A00EFC496 /* App */,
+			);
+			path = "tvOS9-VideoPlayer";
+			sourceTree = "<group>";
+		};
+		7EC5D5421BA4AF0A00EFC496 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7EC5D5431BA4AF1200EFC496 /* Root */,
+				7EC5D5441BA4AF2300EFC496 /* Controllers */,
+				7EC5D5451BA4AF2B00EFC496 /* Ressources */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		7EC5D5431BA4AF1200EFC496 /* Root */ = {
+			isa = PBXGroup;
+			children = (
 				7EC5D52F1BA4A2C300EFC496 /* AppDelegate.swift */,
-				7EC5D5311BA4A2C300EFC496 /* ViewController.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		7EC5D5441BA4AF2300EFC496 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EC5D53E1BA4A32100EFC496 /* MainViewController.swift */,
+				7EC5D5401BA4A59100EFC496 /* VideoPlayerViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7EC5D5451BA4AF2B00EFC496 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
 				7EC5D5331BA4A2C300EFC496 /* Main.storyboard */,
 				7EC5D5361BA4A2C300EFC496 /* Assets.xcassets */,
 				7EC5D5381BA4A2C300EFC496 /* Info.plist */,
 			);
-			path = "tvOS9-VideoPlayer";
+			name = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EC5D5321BA4A2C300EFC496 /* ViewController.swift in Sources */,
+				7EC5D5411BA4A59100EFC496 /* VideoPlayerViewController.swift in Sources */,
+				7EC5D53F1BA4A32200EFC496 /* MainViewController.swift in Sources */,
 				7EC5D5301BA4A2C300EFC496 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
