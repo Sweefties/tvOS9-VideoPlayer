@@ -21,7 +21,11 @@ current movie, watermark image from : [NASA Official Videos](http://www.nasa.gov
 - >= Swift 2.
 - >= tvOS 9.0
 
-Tested on tvOS 9.0 Simulator.
+Tested on tvOS 9.0 Simulator, Apple Tv Developer Kit.
+
+## Important
+
+Get the master branch for XCode 8 / Swift 3 updated project.
 
 ## App Transport Security Settings
 
