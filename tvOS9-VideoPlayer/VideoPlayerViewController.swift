@@ -13,7 +13,7 @@ import AVKit
 class VideoPlayerViewController: AVPlayerViewController {
     
     // MARK: - Properties
-    let overlay = UIView(frame: CGRectMake(100, 100, 285, 225))
+    let overlay = UIView(frame: CGRect(x: 100, y: 100, width: 285, height: 225))
     let watermark = "Nasa-Watermark"
     var url = "http://s3.amazonaws.com/akamai.netstorage/HD_downloads/earth_night_rotate_1080.mov"
     
@@ -35,7 +35,7 @@ extension VideoPlayer {
         contentOverlayView?.addSubview(overlay)
         
         // AVPlayer Instance with NSURL
-        player = AVPlayer(URL: NSURL(string: url)!)
+        player = AVPlayer(url: URL(string: url)!)
         
         // Just Play!
         player?.play()

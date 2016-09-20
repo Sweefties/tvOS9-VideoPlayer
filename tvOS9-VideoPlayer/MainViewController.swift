@@ -27,7 +27,7 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - Navigation
-    @IBAction func playVideo(sender: AnyObject) {
-        self.performSegueWithIdentifier(segueID, sender: self)
+    @IBAction func playVideo(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: segueID, sender: self)
     }
 }
